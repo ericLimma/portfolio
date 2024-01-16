@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     position: fixed;
+    top: 0;
     width: 100vw;
     height: var(--header-height);
     padding: 18px 16px;

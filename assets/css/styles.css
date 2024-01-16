@@ -51,6 +51,7 @@ p {
     display: flex;
     gap: 8px;
     align-items: center;
+    max-width: 174px;
 }
 
 .btn div {
