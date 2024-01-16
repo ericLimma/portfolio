@@ -8,11 +8,16 @@
     --light-blue: rgba(0, 86, 201, 0.7);
     --blue: #003e9a;
     --white: #ffffff;
+    --off-white: #F3F3F3;
     --dark-gray: #272727;
     --black: #000000;
     --header-height: 98px;
     font-family: 'Poppins', sans-serif;
     color: var(--dark-gray);
+}
+
+body {
+    background-color: var(--off-white);
 }
 
 a {
@@ -33,6 +38,9 @@ h2 {
     font-size: 18px;
     color: var(--blue);
     margin-bottom: 4px;
+}
+h3{
+    font-weight: 600;
 }
 
 p {
@@ -60,6 +68,7 @@ p {
     padding-left: 12px;
     align-items: center;
 }
+
 .btn div img {
     width: 18px;
 }
@@ -68,12 +77,11 @@ p {
     background-color: var(--blue);
     color: var(--white);
 }
-.btn-blue div{
+
+.btn-blue div {
     background: linear-gradient(91.39deg, rgba(217, 217, 217, 0.6) -57.21%, rgba(217, 217, 217, 0) 68.04%);
 }
 
-.text-blue{
+.text-blue {
     color: var(--blue);
 }
-
-

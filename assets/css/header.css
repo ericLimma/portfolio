@@ -7,11 +7,14 @@
     height: var(--header-height);
     padding: 18px 16px;
     z-index: 45;
+    backdrop-filter: blur(2px);
 }
-.logo-img{
+
+.logo-img {
     width: 116px;
     height: 51px;
 }
+
 .icone-menu {
     border-radius: 16px;
     border: 1px solid var(--white);

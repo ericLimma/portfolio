@@ -1,0 +1,27 @@
+.projects {
+    padding: 16px;
+}
+
+.project {
+    padding: 8px 16px;
+    background-color: var(--white);
+    border-radius: 16px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.project div {
+    background-color: var(--white);
+    border-radius: 16px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.project-link{
+    font-weight: 800;
+    font-size: 12px;
+    text-decoration: underline;
+    color: var(--blue);
+}
