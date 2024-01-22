@@ -25,13 +25,49 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=Raleway:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+
+        <script defer src="assets/js/toggle.js"></script>
 </head>
 
 <body>
-    <header class="header" id="header">
-        <img class="logo-img" src="assets/img/logo.png" alt="logo Erick Lima">
-        <nav>
-            <img src="assets/img/menu-icon.png" alt="">
+    <header class="main-header" id="main-header">
+        <img class="header-logo" src="assets/img/logo.png" alt="Logo Erick Lima" />
+        <nav class="nav">
+            <img class="menu-icon" src="assets/img/menu-icon.png" alt="">
+            <ul class="navigation nav-on">
+                <li class="nav-item"><a class="nav-link" href="">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="">About me</a></li>
+                <li>
+                    <ul class="nav-social">
+                        <li><a href="" class="nav-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="" class="nav-icon" aria-label="Instagram"><i
+                                    class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="" class="nav-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <ul class="nav-toggles">
+                        <li>
+                            <div class="toggle transform">
+                                <i class="fa-solid fa-sun"></i>
+                                <i class="fa-solid fa-moon"></i>
+                                <div class="ball"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toggle">
+                                <i class="fa-solid fa-sun"></i>
+                                <i class="fa-solid fa-moon"></i>
+                                <div class="ball"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
         </nav>
     </header>
     <main>

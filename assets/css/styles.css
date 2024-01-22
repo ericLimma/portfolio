@@ -12,12 +12,18 @@
     --dark-gray: #272727;
     --black: #000000;
     --header-height: 98px;
+
+
+    --background-light: var(--off-white);
+    --background-dark: var(--dark-gray);
+
+    --background: var(--background-light);
     font-family: 'Poppins', sans-serif;
     color: var(--dark-gray);
 }
 
 body {
-    background-color: var(--off-white);
+    background-color: var(--background);
 }
 
 a {
@@ -39,7 +45,8 @@ h2 {
     color: var(--blue);
     margin-bottom: 4px;
 }
-h3{
+
+h3 {
     font-weight: 600;
 }
 
@@ -84,4 +91,8 @@ p {
 
 .text-blue {
     color: var(--blue);
+}
+
+ul {
+    list-style: none;
 }
