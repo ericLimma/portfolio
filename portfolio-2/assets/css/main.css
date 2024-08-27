@@ -1,0 +1,75 @@
+/* Espaço para a sidebar dentro da página principal */
+.main-content {
+    margin-left: 19.1%;
+    width: calc(100% - 19.1%);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header do main-content */
+.header-section {
+    min-height: 38.2vh;
+    padding: 7rem;
+    width: calc(100% - 38.2%);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Conteúdo das abas */
+.tab-content {
+    flex: 1;
+    position: relative;
+    width: calc(100% - 38.2%);
+    margin: 2rem auto;
+}
+
+/* Estilos das abas */
+.tab {
+    flex: 1;
+    width: 100%;
+    overflow: auto;
+    transform: translateX(150%);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+
+}
+
+/* Aba ativa */
+.tab-sites {
+    transform: translateX(0);
+    display: flex
+}
+
+.tab-videos {
+    display: none;
+}
+
+.tab-podcasts {
+    display: none;
+}
+
+/* Estilos dos posts */
+.sites-content-post {
+    background-color: rgb(150, 12, 12);
+    width: 33%;
+    aspect-ratio: 1 / 1;
+}
+
+.videos-content-post {
+    background-color: rgb(150, 12, 76);
+    width: 33%;
+    aspect-ratio: 9 / 16;
+}
+
+.podcasts-content-post {
+    background-color: rgb(5, 94, 57);
+    width: 33%;
+    aspect-ratio: 1 / 1;
+}

@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --preto: #151515;
+    --preto-azulado: #0c0c0d;
+    --branco: #f5f5f5;
+    --cor-primaria: #c50aa6;
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+body {
+    background-color: var(--preto);
+    color: var(--branco);
+    font-family: "Roboto", sans-serif;
+
+    width: 100vw;
+    height: 100vh;
+    padding: 4rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--preto-azulado);
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    padding: .8rem;
+    border-radius: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.widget {
+    padding: .6rem .8rem;
+    background-color: var(--preto);
+    width: 100%;
+    min-height: 70px;
+    transition: transform .3s ease-out;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.widget:hover {
+    transform: translateY(-.3rem);
+    transition: transform .3s ease-in-out;
+
+}
+
+.bg-primaria {
+    background-color: var(--cor-primaria);
+}
+
+/****************** session 1 */
+.info-user {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .6rem;
+}
+
+.photo img {
+    aspect-ratio: 1 / 1;
+    width: 55px;
+    object-fit: cover;
+    border: 3px solid var(--cor-primaria);
+    border-radius: 8px;
+}
+
+.name-user {
+    text-transform: capitalize;
+}
+
+.name-user h1 {
+    font-size: 1.2rem;
+    padding-bottom: 0.2rem;
+}
+
+.name-user span {
+    color: #fafafab4;
+    font-size: 0.8rem;
+}
+
+/****************** session 2 */
+.hard-skills {
+    width: 100%;
+}
+
+.hard-skills .destaque {
+    color: var(--cor-primaria);
+    font-weight: bold;
+    font-size: 1rem;
+    padding-bottom: 0.3rem;
+    text-transform: capitalize;
+    padding-bottom: 0.2rem;
+}
+
+.skills-icons {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.skills-icons i {
+    transition: color .3s ease-in-out;
+}
+
+.skills-icons i:hover {
+    cursor: pointer;
+}
+
+/* Cores específicas para cada ícone */
+.skills-icons .fa-html5:hover {
+    color: #e34f26;
+}
+
+.skills-icons .fa-css3-alt:hover {
+    color: #1572b6;
+}
+
+.skills-icons .fa-js:hover {
+    color: #f7df1e;
+}
+
+.skills-icons .fa-bootstrap:hover {
+    color: #7952b3;
+}
+
+.skills-icons .fa-react:hover {
+    color: #61dafb;
+}
+
+.skills-icons .fa-php:hover {
+    color: #777bb4;
+}
+
+.skills-icons .fa-github:hover {
+    color: #000;
+}
+
+/****************** session 3 */
+.social-medias {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+
+}
+
+.social-medias .widget {
+    cursor: pointer;
+}
+
+.social-medias-div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+.social-medias-div .widget {
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+    aspect-ratio: 1/ 1;
+}
+
+.social-medias i {
+    font-size: 2.8rem;
+    color: var(--color-white);
+}
+
+.social-medias .whatsapp {
+    font-size: 6rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-medias .whatsapp i {
+    font-size: 6rem;
+
+}
+
+.social-medias .whatsapp:hover {
+    color: #25D366;
+    transition: color 0.3s;
+}
+
+.social-medias .instagram:hover {
+    color: #E1306C;
+    transition: color 0.3s;
+}
+
+.social-medias .tiktok:hover {
+    color: #000;
+    transition: color 0.3s;
+}
+
+.social-medias .github:hover {
+    color: #000;
+    transition: color 0.3s;
+}
+
+.social-medias .linkedin:hover {
+    color: #0077B5;
+    transition: color 0.3s;
+}
+
+.spotfy {
+    padding: 0;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (min-height: 475px) {
+    body {
+        padding: 0;
+    }
+
+    .container {
+        border-radius: 0;
+    }
+}
