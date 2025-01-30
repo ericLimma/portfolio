@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #093364;
+    --num-text-color: #f5f5f5;
+    --operator-text-color: #f96e46;
+    --equal-bg-color: #f96e46;
+    --btn-shadow-color: 1px 1px 3px rgba(189, 188, 188, 0.493);
+    --btn-hover-color:#082e58;
+    --background: url("../img/Sprinkle.no") no-repeat;
+    --toggle-button-color: #f5f5f5;
+
+}
+.light-mode:root{
+    --bg-color: #f5f5f5;
+    --num-text-color: #093364;
+    --operator-text-color: #f96e46;
+    --equal-bg-color: #f96e46;
+    --btn-shadow-color: 1px 1px 3px rgba(0, 0, 0, 0.493);
+    --btn-hover-color:#F5F5DC;
+    --background: url("../img/bg-light.jpg") no-repeat;
+    --toggle-button-color: #093364;
+}
+
+body {
+    background: var(--background);
+    min-width: 375px;
+    transition: .2s;
+
+}

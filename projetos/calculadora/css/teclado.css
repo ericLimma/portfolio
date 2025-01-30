@@ -1,0 +1,58 @@
+.teclado {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    padding: 3px;
+    width: 310px;
+}
+
+.teclado-tecla {
+    background-color: #f96d4600;
+    box-shadow: var(--btn-shadow-color);
+    border: none;
+    border-radius: 100%;
+    color: var(--num-text-color);
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: 'Roboto';
+    height: 4.3rem;
+    width: 4.3rem;
+}
+
+.teclado-operadores {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#tecla-igual {
+    background-color: #f96e46;
+    color: #093364;
+}
+
+#tecla-igual:hover {
+    background-color: var(--equal-bg-color);
+
+}
+.tecla-operador {
+    color: var(--operator-text-color);
+}
+
+.teclado-numeros {
+    column-gap: .5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: .5rem;
+}
+
+.teclado-tecla:hover {
+    background-color: var(--btn-hover-color);
+}
+
+.teclado-tecla:focus {
+    outline: none;
+}
+
+.clear {
+    color: red;
+}

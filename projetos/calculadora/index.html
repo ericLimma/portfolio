@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Portifólio - Calculadora</title>
+    <link rel="shortcut icon" href="./img/calculadora.ico" type="image/x-icon">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/lcd.css">
+    <link rel="stylesheet" href="./css/teclado.css">
+    <link rel="stylesheet" href="./css/calc.css">
+    <link rel="stylesheet" href="./css/dark-light-theme.css">
+
+    <!--fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0740295107.js" crossorigin="anonymous"></script>
+
+    <!--JavaScript-->
+    <script src="./js/calculadora.js"></script>
+
+</head>
+
+<body>
+
+    <div class='calc' id="calc">
+        <div class="toggle-button">
+            <input type="checkbox" class="checkbox" id="check">
+            <label for="check" class="label">
+                <i class="fa-solid fa-sun"></i>
+                <i class="fa-solid fa-moon"></i>
+                <div class="ball"></div>
+            </label>
+        </div>
+        <div class="lcd-container">
+            <input id="lcd-principal" class="lcd lcd-principal" autofocus placeholder="0" disabled type="text">
+            <div class="lcd-caixa-resultado">
+                <textarea id="lcd-resultado" disabled class="lcd lcd-resultado" type=""></textarea>
+            </div>
+        </div>
+        <div class="teclado">
+            <div class="teclado-numeros">
+                <button type="button" onclick="calcular('acao', 'c')" class="teclado-tecla clear"><i
+                        class="fa-regular fa-c"></i></button>
+                <button type="button" onclick="calcular('acao', '%')" class="teclado-tecla tecla-operador"><i
+                        class="fa-regular fa-percent"></i></button>
+                <button type="button" onclick="calcular('acao', '/')" class="teclado-tecla tecla-operador"><i
+                        class="fa-solid fa-divide"></i></button>
+                <button type="button" onclick="calcular('valor', '8')" class="teclado-tecla">8</button>
+                <button type="button" onclick="calcular('valor', '9')" class="teclado-tecla">9</button>
+                <button type="button" onclick="calcular('valor', '7')" class="teclado-tecla">7</button>
+                <button type="button" onclick="calcular('valor', '6')" class="teclado-tecla">6</button>
+                <button type="button" onclick="calcular('valor', '5')" class="teclado-tecla">5</button>
+                <button type="button" onclick="calcular('valor', '4')" class="teclado-tecla">4</button>
+                <button type="button" onclick="calcular('valor', '3')" class="teclado-tecla">3</button>
+                <button type="button" onclick="calcular('valor', '2')" class="teclado-tecla">2</button>
+                <button type="button" onclick="calcular('valor', '1')" class="teclado-tecla">1</button>
+                <button type="button" onclick="calcular('acao', '+/-')" class="teclado-tecla"><i
+                        class="fa-solid fa-plus-minus"></i></button>
+                <button type="button" onclick="calcular('valor', '0')" class="teclado-tecla">0</button>
+                <button type="button" onclick="calcular('valor', ',')" class="teclado-tecla">,</button>
+            </div>
+            <div class="teclado-operadores">
+                <button type="button" onclick="calcular('acao', 'bks')" class="teclado-tecla tecla-operador"><i
+                        class="fa-solid fa-delete-left"></i></button>
+                <button type="button" onclick="calcular('operador', '*')" class="teclado-tecla tecla-operador"><i
+                        class="fa-solid fa-xmark"></i></button>
+                <button type="button" onclick="calcular('operador', '-')" class="teclado-tecla tecla-operador"><i
+                        class="fa-solid fa-minus"></i></button>
+                <button type="button" onclick="calcular('operador', '+')" class="teclado-tecla tecla-operador"><i
+                        class="fa-solid fa-plus"></i></button>
+                <button type="button" onclick="calcular('acao', '=')" class="teclado-tecla " id="tecla-igual"><i
+                        class="fa-regular fa-equals"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/dark-light-theme.js"></script>
+</body>
+
+</html>

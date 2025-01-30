@@ -1,0 +1,36 @@
+.lcd-container {
+    height: 100px;
+    margin: 30px auto;
+    width: 300px;
+}
+
+.lcd {
+    border: none;
+    color: var(--operator-text-color);
+    text-align: right;
+    width: 100%;
+    background-color: #f96d4600;
+}
+
+.lcd-principal {
+    height: 65px;
+    font-size: 2rem;
+    overflow: auto;
+}
+
+.lcd-resultado {
+    height: 80px;
+    font-size: 1.5rem;
+    display: flex;
+    resize: none;
+    outline: none;
+    overflow: auto;
+}
+.lcd-caixa-resultado{
+    display: flex;
+    align-items: flex-end;
+}
+
+.lcd-principal:focus {
+    outline: none;
+}

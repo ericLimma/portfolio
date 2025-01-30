@@ -10,9 +10,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
                 rel="stylesheet">
-        <link rel="shortcut icon" href="assets/icones/android-chrome-192x192.png" type="image/x-icon">
+        <link rel="shortcut icon" href="assets/icons/android-chrome-192x192.png" type="image/x-icon">
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
@@ -222,192 +222,116 @@
                                 <div class="traco"></div>
                         </div>
 
-                        <div class="carousel-container">
-                                <div class="banner-holder">
-                                        <div class="carousel">
-                                                <div class="carousel-item">
+                        <div class="wrapper">
+
+                                <div class="slide-wrapper" data-slide='wrapper'>
+                                        <button class="slide-nav-button slide-nav-prev"
+                                                data-slide="nav-prev-button"><img src="assets/icons/previous.webp"
+                                                        alt="prev icon"></button>
+                                        <button class="slide-nav-button slide-nav-next"
+                                                data-slide="nav-next-button"><img src="assets/icons/next.webp"
+                                                        alt="next icon"></button>
+                                        <div class="slide-list" data-slide="list">
+                                                <div class="slide-item" data-slide="item" data-index="0">
+                                                        <div class="slide-content">
+                                                                <img class="slide-img" src="carrosel/assassinscreed.png"
+                                                                        alt="aa">
+                                                                <div class="slide-description">
+                                                                        <h3>Assasin's Creed</h3>
+
+                                                                </div>
+                                                        </div>
                                                 </div>
-                                                <div class="carousel-item">
-                                                        <img src="assets/img/main-picture.webp" alt="Imagem 2">
+                                                <div class="slide-item" data-slide="item" data-index="1">
+                                                        <div class="slide-content">
+                                                                <img class="slide-img" src="carrosel/fortnite.png"
+                                                                        alt="aa">
+                                                                <div class="slide-description">
+                                                                        <h3>Fortnite</h3>
+                                                                </div>
+                                                        </div>
                                                 </div>
-                                                <div class="carousel-item">
-                                                        <img src="assets/img/1735353589566.jpg" alt="Imagem 3">
+                                                <div class="slide-item" data-slide="item" data-index="2">
+                                                        <div class="slide-content">
+                                                                <img class="slide-img" src="carrosel/freefire.png"
+                                                                        alt="aa">
+                                                                <div class="slide-description">
+                                                                        <h3>Free Fire</h3>
+
+                                                                </div>
+                                                        </div>
                                                 </div>
-                                                <div class="carousel-item">
-                                                        <img src="assets/img/main-picture.webp" alt="Imagem 2">
+                                                <div class="slide-item" data-slide="item" data-index="3">
+                                                        <div class="slide-content">
+                                                                <img class="slide-img" src="carrosel/gta-v.png"
+                                                                        alt="aa">
+                                                                <div class="slide-description">
+                                                                        <h3>GTA</h3>
+
+                                                                </div>
+                                                        </div>
                                                 </div>
-                                                <div class="carousel-item">
-                                                        <img src="assets/img/1735353589566.jpg" alt="Imagem 1">
+                                                <div class="slide-item" data-slide="item" data-index="4">
+                                                        <div class="slide-content">
+                                                                <img class="slide-img" src="carrosel/halo5.png"
+                                                                        alt="aa">
+                                                                <div class="slide-description">
+                                                                        <h3>Halo 5</h3>
+                                                                        <p>Lorem ipsum dolor sit amet consectetur,
+                                                                                adipisicing elit.</p>
+                                                                </div>
+                                                        </div>
                                                 </div>
-                                                <div class="carousel-item">
-                                                        <img src="assets/img/main-picture.webp" alt="Imagem 2">
+                                                <div class="slide-item" data-slide="item" data-index="5">
+                                                        <div class="slide-content">
+                                                                <img class="slide-img"
+                                                                        src="carrosel/league-of-legends.png" alt="aa">
+                                                                <div class="slide-description">
+                                                                        <h3>LOL</h3>
+
+                                                                </div>
+                                                        </div>
                                                 </div>
+                                        </div>
+                                        <div class="slide-controls" id="slide-controls" data-slide="controls-wrapper">
                                         </div>
                                 </div>
                         </div>
-
-
-                        <style>
-                                .carousel-container {
-                                        width: 100%;
-                                        height: 300px;
-                                        /* Altura fixa do carrossel */
-                                        overflow: hidden;
-                                        position: relative;
-                                }
-
-                                .banner-holder {
-                                        width: 100%;
-                                        height: 100%;
-                                        position: relative;
-                                }
-
-                                .carousel {
-                                        display: flex;
-                                        height: 100%;
-                                        transition: transform 1s ease-out;
-                                }
-
-                                .carousel-item {
-                                        flex-shrink: 0;
-                                        height: 100%;
-                                        display: flex;
-                                        justify-content: center;
-                                        align-items: center;
-                                        overflow: hidden;
-                                        /* Garante que nada extrapole o container */
-                                        position: relative;
-                                }
-
-                                .carousel-item img {
-                                        width: 100%;
-                                        /* Garante que a largura seja ajustada ao container */
-                                        height: 100%;
-                                        /* Ajusta a altura proporcionalmente */
-                                        object-fit: cover;
-                                        /* Corta as imagens para preencher o espaço sem distorcer */
-                                        display: block;
-                                        /* Evita comportamento inesperado de imagens inline */
-                                }
-
-                                /* Responsivo */
-                                @media (min-width: 768px) {
-                                        .carousel-item {
-                                                width: calc(100% / 3);
-                                                /* Mostra 3 itens em telas maiores */
-                                        }
-                                }
-
-                                @media (max-width: 767px) {
-                                        .carousel-item {
-                                                width: 100%;
-                                                /* Mostra 1 item por vez em telas menores */
-                                        }
-                                }
-                        </style>
-
-                        <script>
-                                function initializeCarousel() {
-                                        const carousels = document.querySelectorAll(".carousel");
-
-                                        carousels.forEach((carousel) => {
-                                                const banners = carousel.querySelectorAll(".carousel-item");
-                                                const totalSlides = banners.length;
-
-                                                let currentIndex = 0;
-                                                let itemsPerView = window.innerWidth >= 768 ? 3 : 1; // 3 imagens para telas maiores
-
-                                                function updateCarousel() {
-                                                        const bannerWidth = carousel.parentElement.offsetWidth / itemsPerView;
-
-                                                        carousel.style.width = `${totalSlides * bannerWidth}px`; // Define o tamanho total do carrossel
-                                                        banners.forEach((banner) => {
-                                                                banner.style.width = `${bannerWidth}px`; // Define a largura de cada item
-                                                        });
-
-                                                        carousel.style.transform = `translateX(-${currentIndex * bannerWidth}px)`; // Atualiza o deslocamento
-                                                }
-
-                                                // Roda automaticamente
-                                                setInterval(() => {
-                                                        currentIndex = (currentIndex + itemsPerView) % totalSlides;
-                                                        const bannerWidth = carousel.parentElement.offsetWidth / itemsPerView;
-                                                        carousel.style.transform = `translateX(-${currentIndex * bannerWidth}px)`;
-                                                }, 2000);
-
-                                                // Atualiza no resize
-                                                window.addEventListener("resize", () => {
-                                                        itemsPerView = window.innerWidth >= 768 ? 3 : 1;
-                                                        updateCarousel();
-                                                });
-
-                                                updateCarousel(); // Configuração inicial
-                                        });
-                                }
-
-                                document.addEventListener("DOMContentLoaded", initializeCarousel);
-
-
-                        </script>
-
+                        <script defer src="assets/js/slide.js"></script>
+                        <a class="btn" href="https://www.linkedin.com/in/erick-lima-6a0321253/" target="_blank"
+                                referrerpolicy="no-referrer">Linkedin</a>
                 </section>
-
-                <script>
-                        document.addEventListener('DOMContentLoaded', () => {
-                                const sections = document.querySelectorAll('.section');
-                                let currentIndex = 0;
-                                let isScrolling = false; // Evita múltiplos eventos de scroll ao mesmo tempo
-                                document.getElementById('home').scrollIntoView({
-                                        block: 'center'
-                                })
-                                function scrollToSection(index) {
-                                        if (index >= 0 && index < sections.length) {
-                                                sections[index].scrollIntoView({
-                                                        behavior: 'smooth',
-                                                        block: 'center', // Centraliza a seção
-                                                });
-                                        }
-                                }
-
-                                document.addEventListener('wheel', (event) => {
-                                        if (isScrolling) return;
-                                        isScrolling = true;
-
-                                        if (event.deltaY > 0 && currentIndex < sections.length - 1) {
-                                                currentIndex++;
-                                        } else if (event.deltaY < 0 && currentIndex > 0) {
-                                                currentIndex--;
-                                        }
-
-                                        scrollToSection(currentIndex);
-
-                                        setTimeout(() => {
-                                                isScrolling = false;
-                                        }, 500); // Controle do tempo do scroll
-                                });
-
-                                document.addEventListener('keydown', (event) => {
-                                        if (isScrolling) return;
-                                        isScrolling = true;
-
-                                        if (event.key === 'ArrowDown' && currentIndex < sections.length - 1) {
-                                                currentIndex++;
-                                        } else if (event.key === 'ArrowUp' && currentIndex > 0) {
-                                                currentIndex--;
-                                        }
-
-                                        scrollToSection(currentIndex);
-
-                                        setTimeout(() => {
-                                                isScrolling = false;
-                                        }, 500); // Controle do tempo do scroll
-                                });
-                        });
-
-                </script>
+                <footer id="footer" class="section">
+                        <h3>
+                                <span class="pt">Estou disponível para trabalhos freelancer, você pode me contatar
+                                        por</span>
+                                <span class="en">I'm available for freelance work, you can reach me by</span>
+                        </h3>
+                        <ul class="social-medias">
+                                <li>
+                                        <a href="https://www.instagram.com/ericlimma.dev/" target="_blank"
+                                                referrerpolicy="no-referrer">Instagram</a>
+                                </li>
+                                <li>
+                                        <a href="https://github.com/ericLimma/"" target=" _blank"
+                                                referrerpolicy="no-referrer">Github</a>
+                                </li>
+                                <li>
+                                        <a href="https://www.linkedin.com/in/erick-lima-6a0321253/" target="_blank"
+                                                referrerpolicy="no-referrer">Linkedin
+                                        </a>
+                                </li>
+                                <li>
+                                        <a href="https://whatsa.me/5519996624496" target="_blank"
+                                                referrerpolicy="no-referrer">WhatsApp</a>
+                                </li>
+                        </ul>
+                        <small>&copy; 2024 — Design by Erick Lima</small>
+                </footer>
         </main>
         <!-- <script src="assets/js/loading-screen.js"></script> -->
         <script defer src="https://whatsa.me/bt-min.js?link=https://whatsa.me/5519996624496"></script>
+        <script src="assets/js/scroll.js"></script>
         <script defer src="assets/js/theme-toggle.js"></script>
         <script defer src="assets/js/open-menu.js"></script>
 </body>
