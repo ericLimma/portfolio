@@ -1,0 +1,51 @@
+
+/* about */
+.about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        min-height: 70vh;
+        padding: 2rem 1rem;
+}
+
+.about-container {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: space-between;
+        justify-content: space-between;
+        padding: 2rem 0;
+        width: 100%;
+        max-width: 1400px;
+}
+
+.about-container h2 {
+        flex: 0 0 auto;
+        /* Não cresce, não encolhe, tamanho automático */
+        white-space: nowrap;
+        /* Impede a quebra de linha */
+}
+
+.about-container p {
+        flex: 1;
+        /* Ocupa o espaço restante */
+        min-width: 0;
+        /* Permite que o texto quebre dentro do parágrafo */
+        max-width: 450px;
+}
+
+.about .slide-display {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        overflow-x: hidden;
+}
+
+.about .slide-img {
+        width: 100%;
+        object-fit: cover;
+        aspect-ratio: 3/4;
+        border-radius: 1rem;
+}
